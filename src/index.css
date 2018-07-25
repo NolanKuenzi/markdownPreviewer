@@ -1,0 +1,115 @@
+body {
+	overflow: hidden;
+	background-color: violet;
+}
+
+a {
+	color: white;
+}
+
+li a {
+	color: black;
+}
+
+#nB0 {
+	position: relative;
+	text-align: center;
+	right: 1em;
+} 
+.nB0Item {
+	display: inline;
+	list-style-type: none;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	color: black;
+}
+
+#header {
+	text-align: center;
+	position: relative;	
+	text-decoration: underline !important;
+}
+
+.input_Output {
+	position: relative;
+	text-decoration: underline !important;
+	bottom: 0.5em;
+}
+
+.markDownDivs {
+	height: 40em;
+	width: 35em;
+	border-style: solid;
+	border-width: 0.3em;
+	border-color: black;
+	border-radius: 1.5em;
+	background-color: blue;
+	background-color: rgba(42, 109, 131, 1); 
+}
+
+#input {
+	text-align: center;
+	position: relative;
+	top: 1em;
+	left: 8.5em;
+}
+
+#output {
+	text-align: center;
+	position: relative;
+	left: 45em;
+	bottom: 39.6em;
+} 
+
+textarea {
+  resize: none;
+}
+
+#markDownInputHeader {
+	position: relative;
+	margin-bottom: 3.5em;
+}
+
+#markdownOutputHeader {
+	position: relative;
+	margin-bottom: 2.5em;
+}
+
+#editor {
+	border-style: none;
+	border-width: 0.2em;
+	border-radius: 1.5em;
+	height: 38em;
+	width: 37em;
+	position: relative;
+	bottom: 2em;
+	font-size: 0.9em;
+	background-color: blue;
+	background-color: rgba(42, 109, 131, 1); 
+}
+
+#preview {
+	text-align: left;
+	border-style: none;
+	border-width: 0.2em;
+	border-radius: 1.5em;
+	height: 36.5em;
+	width: 35em;
+	position: relative;
+	bottom: 2em;
+	text-decoration: none;
+}
+
+#footer {
+	position: absolute;
+	text-align: center;
+	left: 9.8em;
+	width: 70em;
+	bottom: 0.1em;
+}
+
+#aboutText {
+	position: relative;
+	top: 3.5em;
+	text-align: center;
+}
