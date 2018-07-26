@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Header } from './app.js'
 
 function About() {
 return (

@@ -76,8 +76,6 @@ textarea {
 	margin-bottom: 3.5em;
 }
 
-
-
 #editor {
 	border-style: none;
 	border-width: 0.2em;
@@ -122,10 +120,4 @@ textarea {
 
 #aboutDiv {
 	position: relative;
-}
-
-#aboutText {
-	position: relative;
-	top: 3.5em;
-	text-align: center;
 }
