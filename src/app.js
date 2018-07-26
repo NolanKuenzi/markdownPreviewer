@@ -11,7 +11,7 @@ class Header extends React.Component {
   constructor(props) {
   super(props);
   this.state = {
-    home: false  
+    home: true  
     }
   this.move = this.move.bind(this);
   }
@@ -55,7 +55,7 @@ class MarkdownPreviewer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      editor: "# This is a Markdown Previewer\n\n## Give it a try...\n\n### Some Markdown Examples:\n\n - **Bold Text**\n - *Italicized Text*\n - ***Bold Italicized Text***\n\nAn Image:\n\n ![image](wiki_logo.svg)\n\n~~~\nFenced\nCode\nBlocks\n~~~\n\n<span style=\"color:gold\">Inline Code</span>\n\n> ### Block\n> Quotes\n\n[Learn More About Markdown](https://github.github.com/gfm/)"
+      editor: "# This is a Markdown Previewer\n\n## Give it a try...\n\n### Some Markdown Examples:\n\n - **Bold Text**\n - *Italicized Text*\n - ***Bold Italicized Text***\n\nAn Image:\n\n ![image](./public/wiki_logo.svg)\n\n~~~\nFenced\nCode\nBlocks\n~~~\n\n<span style=\"color:gold\">Inline Code</span>\n\n> ### Block\n> Quotes\n\n[Learn More About Markdown](https://github.github.com/gfm/)"
     }
   this.handleInput = this.handleInput.bind(this);
   }
