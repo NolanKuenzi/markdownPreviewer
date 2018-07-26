@@ -1,3 +1,5 @@
+/* Universal */
+
 body {
 	overflow: hidden;
 	background-color: violet;
@@ -10,6 +12,12 @@ a {
 li a {
 	color: black;
 }
+
+textarea {
+  resize: none;
+}
+
+/* app.js */
 
 #nB0 {
 	position: relative;
@@ -36,6 +44,8 @@ li a {
 	bottom: 0.5em;
 }
 
+/* Also included in markDownOutput.js */
+
 .markDownDivs {
 	height: 40em;
 	width: 35em;
@@ -61,19 +71,12 @@ li a {
 	bottom: 39.6em;
 } 
 
-textarea {
-  resize: none;
-}
-
 #markDownInputHeader {
 	position: relative;
 	margin-bottom: 3.5em;
 }
 
-#markdownOutputHeader {
-	position: relative;
-	margin-bottom: 2.5em;
-}
+
 
 #editor {
 	border-style: none;
@@ -88,6 +91,21 @@ textarea {
 	background-color: rgba(42, 109, 131, 1); 
 }
 
+#footer {
+	position: absolute;
+	text-align: center;
+	left: 9.8em;
+	width: 70em;
+	bottom: 0.1em;
+}
+
+/* markDownOutput.js */
+
+#markdownOutputHeader {
+	position: relative;
+	margin-bottom: 2.5em;
+}
+
 #preview {
 	text-align: left;
 	border-style: none;
@@ -100,12 +118,10 @@ textarea {
 	text-decoration: none;
 }
 
-#footer {
-	position: absolute;
-	text-align: center;
-	left: 9.8em;
-	width: 70em;
-	bottom: 0.1em;
+/* about.js */
+
+#aboutDiv {
+	position: relative;
 }
 
 #aboutText {
