@@ -5,7 +5,6 @@ import { Header } from './app.js'
 function About() {
 return (
     <div id="aboutDiv">
-    <Header />
     <h4>This Markdown Previewer Application renders Github flavored markdown entered into the app's Markdown Input section into HTML in the 
     app's Markdown Output section, using the Marked Library (version 0.4.0).</h4>
     <p>To use the app users simply need to enter markdown into the input section and it will apear as html in the output section. 

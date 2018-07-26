@@ -18,6 +18,17 @@ function Header() {
   );
 }
 
+function Main() {
+  return (
+  <div id="Main">
+    <Switch>  
+    <Route exact path="/" component={MarkdownPreviewer} />
+    <Route path="/about" component={About} />
+    </Switch>
+  </div>
+  );
+}
+
 class MarkdownPreviewer extends React.Component {
   constructor(props) {
     super(props);
@@ -26,7 +37,6 @@ class MarkdownPreviewer extends React.Component {
     }
   this.handleInput = this.handleInput.bind(this);
   }
-
   handleInput(event) {
     this.setState({
       editor: event.target.value
@@ -36,8 +46,7 @@ class MarkdownPreviewer extends React.Component {
     return (
       <div id="containerDiv">  
       <div id="mdpDiv">
-         <h2 id="header">Markdown Previewer</h2>
-        <Header />
+        <h2 id="header">Markdown Previewer</h2>
         <div className="markDownDivs" id="input">
         <h3 className="input_Output" id="markDownInputHeader">Markdown Input</h3>
         <div><textarea id="editor" onChange={this.handleInput} value={this.state.editor}></textarea></div>
@@ -50,21 +59,13 @@ class MarkdownPreviewer extends React.Component {
   }
 }
 
-class App extends React.Component {
-constructor(props) {
-    super(props);
-    }
-  render() {
-    return (
-      <div id="containerDiv">
-        <Switch>  
-          <Route exact path="/" component={MarkdownPreviewer} />
-          <Route path="/about" component={About} />
-        </Switch>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+    <Header />
+    <Main />
+    </div>
+  );
 }
 
-export { Header }
 export { App }
