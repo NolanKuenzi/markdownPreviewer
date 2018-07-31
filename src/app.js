@@ -7,51 +7,7 @@ import { Link } from 'react-router-dom';
 import { About } from './about.js';
 import { MarkDownOutput } from './markDownOutput.js';
 
-class Header extends React.Component {
-  constructor(props) {
-  super(props);
-  this.state = {
-    home: true  
-    }
-  this.move = this.move.bind(this);
-  }
-  move(event) {
-    if (event.target.id === "home") {
-      this.setState({
-        home: true
-      });
-    } 
-    if (event.target.id === "abt") {
-      this.setState({
-        home: false
-      });
-    }
-  }
-  render() {
-  return (
-    <div id="headerDiv">
-      <ul id="nB0">
-        <li className="nB0Item"><Link id="home" onClick={this.move} to="/markdownPreviewer">Home</Link></li>
-        <li className="nB0Item"><Link id="abt" onClick={this.move} to="/about">About</Link></li>
-      </ul>
-      <div>{this.state.home ? <MarkdownPreviewer /> : null}</div>
-    </div>
-    );
-  }
-}
-
-function Main() {
-  return (
-  <div id="Main">
-    <Switch>  
-      <Route path="/markdownPreviewer" component={MarkdownPreviewer} />
-      <Route path="/about" component={About} />
-    </Switch>
-  </div>
-  );
-}
-
-class MarkdownPreviewer extends React.Component {
+class Previewer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -79,6 +35,51 @@ class MarkdownPreviewer extends React.Component {
       </div>
     );
   }
+}
+
+function MarkdownPreviewer() {
+return (
+    <Switch>
+      <Route path="/MarkdownPreviewer/Previewer" component={Previewer} />
+      <Route path="/MarkdownPreviewer/About" component={About} />
+  </Switch>
+  );
+}
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: true
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState({
+      input: false
+    });
+  }
+  render() {
+   return (
+    <div id="headerDiv">
+      <ul id="nB0">
+      <li class="nB0Item"><Link onClick={this.handleClick} to="/MarkdownPreviewer/Previewer">Previewer</Link></li>
+      <li class="nB0Item"><Link onClick={this.handClick} to="/MarkdownPreviewer/About">About</Link></li>
+      </ul>
+      {this.state.input ? <Previewer /> : <MarkdownPreviewer />}
+    </div>
+    );
+  }
+}
+
+function Main() {
+  return (
+  <div id="Main">
+    <Switch>  
+      <Route exact path="/MarkdownPreviewer" component={MarkdownPreviewer} />
+    </Switch>
+  </div>
+  );
 }
 
 function App() {
