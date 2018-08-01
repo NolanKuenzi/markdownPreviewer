@@ -37,15 +37,17 @@ class Previewer extends React.Component {
   }
 }
 
-function MarkdownPreviewer() {
-return (
-    <Switch>
-      <Route path="/MarkdownPreviewer/Previewer" component={Previewer} />
-      <Route path="/MarkdownPreviewer/About" component={About} />
-  </Switch>
+function Main() {
+  return (
+  <div id="Main">
+    <Switch>  
+      <Route exact path="/" component={Previewer} />
+      <Route path="/Previewer" component={Previewer} />
+      <Route path="/About" component={About} />
+    </Switch>
+  </div>
   );
 }
-
 
 class Header extends React.Component {
   constructor(props) {
@@ -62,26 +64,17 @@ class Header extends React.Component {
     });
   }
   render() {
+    //       {this.state.input ? <Previewer /> : null}
    return (
     <div id="headerDiv">
       <ul id="nB0">
-      <li class="nB0Item"><Link onClick={this.handleClick} to="/MarkdownPreviewer/Previewer">Previewer</Link></li>
-      <li class="nB0Item"><Link onClick={this.handClick} to="/MarkdownPreviewer/About">About</Link></li>
+      <li class="nB0Item"><Link onClick={this.handleClick} to="/Previewer">Previewer</Link></li>
+      <li class="nB0Item"><Link onClick={this.handClick} to="/About">About</Link></li>
       </ul>
-      {this.state.input ? <Previewer /> : <MarkdownPreviewer />}
+
     </div>
     );
   }
-}
-
-function Main() {
-  return (
-  <div id="Main">
-    <Router>  
-      <Route exact path="/MarkdownPreviewer" component={MarkdownPreviewer} />
-    </Router>
-  </div>
-  );
 }
 
 function App() {
