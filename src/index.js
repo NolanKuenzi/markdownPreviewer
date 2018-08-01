@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 
-import { BrowserRouter as Router} from 'react-router-dom';
+import { HashRouter as Router} from 'react-router-dom';
 import { App } from "./app.js"
 import './index.css';
 

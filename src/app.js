@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { BrowserRouter as Router} from 'react-router-dom';
+import { HashRouter as Router} from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { About } from './about.js';
@@ -46,6 +46,7 @@ return (
   );
 }
 
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -54,6 +55,7 @@ class Header extends React.Component {
     }
     this.handleClick = this.handleClick.bind(this);
   }
+
   handleClick() {
     this.setState({
       input: false
@@ -75,9 +77,9 @@ class Header extends React.Component {
 function Main() {
   return (
   <div id="Main">
-    <Switch>  
+    <Router>  
       <Route exact path="/MarkdownPreviewer" component={MarkdownPreviewer} />
-    </Switch>
+    </Router>
   </div>
   );
 }
