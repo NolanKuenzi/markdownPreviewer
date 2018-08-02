@@ -49,32 +49,15 @@ function Main() {
   );
 }
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      input: true
-    }
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState({
-      input: false
-    });
-  }
-  render() {
-    //       {this.state.input ? <Previewer /> : null}
+function Header() {
    return (
     <div id="headerDiv">
       <ul id="nB0">
-      <li class="nB0Item"><Link onClick={this.handleClick} to="/Previewer">Previewer</Link></li>
-      <li class="nB0Item"><Link onClick={this.handClick} to="/About">About</Link></li>
+      <li class="nB0Item"><Link to="/Previewer">Previewer</Link></li>
+      <li class="nB0Item"><Link to="/About">About</Link></li>
       </ul>
-
     </div>
-    );
-  }
+  );
 }
 
 function App() {
