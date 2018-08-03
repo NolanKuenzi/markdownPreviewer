@@ -22,16 +22,12 @@ class Previewer extends React.Component {
   }
   render() {
       return (
-      <div id="containerDiv">  
       <div id="mdpDiv">
-        <h2 id="header">Markdown Previewer</h2>
         <div className="markDownDivs" id="input">
         <h3 className="input_Output" id="markDownInputHeader">Markdown Input</h3>
-        <div><textarea id="editor" onChange={this.handleInput} value={this.state.editor}></textarea></div>
-        </div>
-        <MarkDownOutput text={this.state.editor} />
-      <div id="footer"><h4 id="footerText">Copyright © 2018 Nolan Kuenzi. Made for the freeCodeCamp Development Challenge: Build a Markdown Previewer.</h4></div>
-      </div>
+       <div><textarea id="editor" onChange={this.handleInput} value={this.state.editor}></textarea></div>
+       </div>
+       <MarkDownOutput text={this.state.editor} /> 
       </div>
     );
   }
@@ -49,15 +45,36 @@ function Main() {
   );
 }
 
-function Header() {
-   return (
-    <div id="headerDiv">
-      <ul id="nB0">
-      <li class="nB0Item"><Link to="/Previewer">Previewer</Link></li>
-      <li class="nB0Item"><Link to="/About">About</Link></li>
-      </ul>
-    </div>
-  );
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      header: true
+    }
+  this.headerSwitch = this.headerSwitch.bind(this);
+  }
+    headerSwitch() {
+      if (this.state.header === true) {
+        this.setState({
+          header: false
+        });
+      } else {
+        this.setState({
+          header: true
+        })
+      }
+    }
+    render() {
+      return (
+        <div id="headerDiv">
+          <ul id="nB0">
+            <li class="nB0Item"><Link onClick={this.headerSwitch} to="/Previewer">Previewer</Link></li>
+            <li class="nB0Item"><Link onClick={this.headerSwitch} to="/About">About</Link></li>
+          </ul>
+           <h2 id="header">{this.state.header ? "Markdown Previewer" : null}</h2>
+        </div>
+    );
+  }
 }
 
 function App() {
