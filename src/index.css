@@ -17,11 +17,24 @@ textarea {
   resize: none;
 }
 
+#footer {
+	overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 /* app.js */
+
+#mdpDiv {
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
 
 #nB0 {
 	position: relative;
-	right: 1.1em;
+	right: 1.3em;
 } 
 
 .nB0Item {
@@ -37,22 +50,10 @@ textarea {
 	text-decoration: underline !important;
 }
 
-#headerDiv {
-	width: 100%;
-	text-align: center;
-
-}
-
 .input_Output {
 	position: relative;
 	text-decoration: underline !important;
 	bottom: 0.5em;
-	text-align: center;
-}
-
-#mdpDiv {
-	width: 100%;
-	position: relative;
 	text-align: center;
 }
 
@@ -122,15 +123,8 @@ textarea {
 
 #aboutDiv {
 	position: relative;
-}
-
-footer {
-	position: relative;
-	top: 35em;
-	z-index: 1;
-
-}
-
-h4 {
 	text-align: center;
 }
+
+
+
