@@ -17,6 +17,10 @@ textarea {
   resize: none;
 }
 
+#headerDiv {
+	text-align: center;
+}
+
 #footer {
 	overflow: hidden;
     position: fixed;
