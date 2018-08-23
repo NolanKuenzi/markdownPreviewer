@@ -1,133 +1,124 @@
 /* Universal */
 
 body {
-	overflow: hidden;
 	background-color: violet;
 }
 
-a {
-	color: white;
+#nbList {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	padding-right: 2.1em;
 }
 
 li a {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 	color: black;
+	list-style-type: none;
+}
+
+.nB0Item {
+	list-style-type: none;
+}
+
+#header {
+	display: flex;
+	justify-content: center;
+	text-decoration: underline !important;
+	margin-top: -1em; 
 }
 
 textarea {
-  resize: none;
-}
-
-#headerDiv {
-	text-align: center;
+	resize: none;
 }
 
 #footer {
-	overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
 }
 
 /* app.js */
 
-#mdpDiv {
-	position: relative;
-	text-align: center;
+#contain {
+	display: flex;
+	flex-direction: column;
+
 }
 
-#nB0 {
-	position: relative;
-	right: 1.3em;
-} 
-
-.nB0Item {
-	display: inline;
-	list-style-type: none;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	color: black;
-}
-
-#header {
-	position: relative;	
-	text-decoration: underline !important;
+#mdpDiv {	
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .input_Output {
-	position: relative;
+	display: flex;
+	justify-content: center;
 	text-decoration: underline !important;
-	bottom: 0.5em;
-	text-align: center;
 }
 
 /* Also included in markDownOutput.js */
 
 .markDownDivs {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1em;
+	padding-left: 1em;
 	height: 40em;
 	width: 36em;
 	border-style: solid;
-	border-width: 0.3em;
+	border-width: 0.2em;
 	border-color: black;
 	border-radius: 1.5em;
 	background-color: blue;
-	background-color: rgba(42, 109, 131, 1); 
+	background-color: rgba(42, 109, 131, 1);
 }
 
-#input {
-	position: relative;
-	top: 1em;
-	left: 8em;
-}
-
-#output {
-	position: relative;
-	left: 46em;
-	bottom: 39.6em;
-} 
+/* app.js */
 
 #markDownInputHeader {
-	position: relative;
-	margin-bottom: 3.5em;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1em;
 }
 
 #editor {
+	display: flex;
 	border-style: none;
-	border-width: 0.2em;
 	border-radius: 1.5em;
 	height: 40em;
 	width: 39em;
-	position: relative;
-	bottom: 4em;
 	font-size: 0.9em;
 	background-color: blue;
-	background-color: rgba(42, 109, 131, 1); 
+	background-color: rgba(42, 109, 131, 1);
 }
 
 /* markDownOutput.js */
 
 #markdownOutputHeader {
-	position: relative;
-	margin-bottom: 2.5em;
+	margin-bottom: -1em;
 }
 
 #preview {
-	text-align: left;
 	border-style: none;
-	border-width: 0.2em;
 	border-radius: 1.5em;
-	height: 36.5em;
-	width: 35em;
-	position: relative;
-	bottom: 2em;
+	height: 49em;
+	width: 36em;
 	text-decoration: none;
+	background-color: blue;
+	background-color: rgba(42, 109, 131, 1);
 }
 
 /* about.js */
 
-#aboutDiv {
-	position: relative;
+#abtText {
 	text-align: center;
 }
 
-
+a {
+	color: white;
+}
 
