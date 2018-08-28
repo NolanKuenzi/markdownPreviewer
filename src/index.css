@@ -26,7 +26,7 @@ li a {
 	display: flex;
 	justify-content: center;
 	text-decoration: underline !important;
-	margin-top: -1em; 
+	
 }
 
 textarea {
@@ -34,10 +34,11 @@ textarea {
 }
 
 #footer {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
 	text-align: center;
+}
+
+a {
+	color: white;
 }
 
 /* app.js */
@@ -48,27 +49,22 @@ textarea {
 
 }
 
-#mdpDiv {	
+#mdpDiv {
+	height: 43em;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-}
-
-.input_Output {
-	display: flex;
-	justify-content: center;
-	text-decoration: underline !important;
+	margin-top: -1em;
 }
 
 /* Also included in markDownOutput.js */
 
-.markDownDivs {
-	display: flex;
-	flex-direction: column;
-	padding-bottom: 1em;
-	padding-left: 1em;
-	height: 40em;
-	width: 36em;
+.markDownElements {
+	position: relative;
+	height: 100%;
+	width: 40em;
+	overflow: none;
 	border-style: solid;
 	border-width: 0.2em;
 	border-color: black;
@@ -79,18 +75,18 @@ textarea {
 
 /* app.js */
 
-#markDownInputHeader {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 1em;
+#inputHeader {
+	position: relative;
+	text-align: center;
+	text-decoration: underline !important;
 }
 
 #editor {
-	display: flex;
-	border-style: none;
-	border-radius: 1.5em;
-	height: 40em;
-	width: 39em;
+	border: none;
+	position: relative;
+	margin-bottom: 4em;
+	height: 88%;
+	width: 99%;
 	font-size: 0.9em;
 	background-color: blue;
 	background-color: rgba(42, 109, 131, 1);
@@ -98,27 +94,27 @@ textarea {
 
 /* markDownOutput.js */
 
-#markdownOutputHeader {
-	margin-bottom: -1em;
+#outputHeader {
+	position: relative;
+	text-align: center;
+	text-decoration: underline !important;
 }
 
 #preview {
-	border-style: none;
-	border-radius: 1.5em;
-	height: 49em;
-	width: 36em;
+	position: relative;
 	text-decoration: none;
-	background-color: blue;
-	background-color: rgba(42, 109, 131, 1);
+	overflow: scroll;	
 }
 
 /* about.js */
 
 #abtText {
 	text-align: center;
+	padding-bottom: 36%
 }
 
-a {
-	color: white;
+#abtFooter {
+	position: relative;
+    text-align: center;
 }
 
