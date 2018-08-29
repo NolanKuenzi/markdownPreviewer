@@ -41,6 +41,12 @@ a {
 	color: white;
 }
 
+::-webkit-scrollbar {
+    width: 0em;
+    height: 0em;
+    background: transparent;
+}
+
 /* app.js */
 
 #contain {
@@ -63,7 +69,7 @@ a {
 .markDownElements {
 	position: relative;
 	height: 100%;
-	width: 40em;
+	width: 35em;
 	overflow: none;
 	border-style: solid;
 	border-width: 0.2em;
@@ -79,6 +85,11 @@ a {
 	position: relative;
 	text-align: center;
 	text-decoration: underline !important;
+
+}
+
+#editorDiv {
+	overflow: scroll;
 }
 
 #editor {
@@ -92,6 +103,10 @@ a {
 	background-color: rgba(42, 109, 131, 1);
 }
 
+textarea:focus {
+	outline: 0;
+}
+
 /* markDownOutput.js */
 
 #outputHeader {
@@ -103,7 +118,7 @@ a {
 #preview {
 	position: relative;
 	text-decoration: none;
-	overflow: scroll;	
+	overflow: scroll;
 }
 
 /* about.js */
