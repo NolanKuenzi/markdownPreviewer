@@ -1,136 +1,133 @@
 /* Universal */
 
 body {
-	background-color: violet;
+  background-color: violet;
 }
 
 #nbList {
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	padding-right: 2.1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-right: 2.1em;
 }
 
 li a {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	color: black;
-	list-style-type: none;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: black;
+  list-style-type: none;
 }
 
 .nB0Item {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 #header {
-	display: flex;
-	justify-content: center;
-	text-decoration: underline !important;
-	
+  display: flex;
+  justify-content: center;
+  text-decoration: underline !important;	
 }
 
 textarea {
-	resize: none;
+  resize: none;
 }
 
 #footer {
-	text-align: center;
+  text-align: center;
 }
 
 a {
-	color: white;
+  color: white;
 }
 
 ::-webkit-scrollbar {
-    width: 0em;
-    height: 0em;
-    background: transparent;
+  width: 0em;
+  height: 0em;
+  background: transparent;
 }
 
 /* app.js */
 
 #contain {
-	display: flex;
-	flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 #mdpDiv {
-	height: 43em;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: -1em;
+  height: 43em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -1em;
 }
 
 /* Also included in markDownOutput.js */
 
 .markDownElements {
-	position: relative;
-	height: 100%;
-	width: 35em;
-	overflow: none;
-	border-style: solid;
-	border-width: 0.2em;
-	border-color: black;
-	border-radius: 1.5em;
-	background-color: blue;
-	background-color: rgba(42, 109, 131, 1);
+  position: relative;
+  height: 100%;
+  width: 35em;
+  overflow: none;
+  border-style: solid;
+  border-width: 0.2em;
+  border-color: black;
+  border-radius: 1.5em;
+  background-color: blue;
+  background-color: rgba(42, 109, 131, 1);
 }
 
 /* app.js */
 
 #inputHeader {
-	position: relative;
-	text-align: center;
-	text-decoration: underline !important;
-
+  position: relative;
+  text-align: center;
+  text-decoration: underline !important;
 }
 
 #editorDiv {
-	overflow: scroll;
+  overflow: scroll;
 }
 
 #editor {
-	border: none;
-	position: relative;
-	margin-bottom: 4em;
-	height: 88%;
-	width: 99%;
-	font-size: 0.9em;
-	background-color: blue;
-	background-color: rgba(42, 109, 131, 1);
+  border: none;
+  position: relative;
+  margin-bottom: 4em;
+  height: 88%;
+  width: 99%;
+  font-size: 0.9em;
+  background-color: blue;
+  background-color: rgba(42, 109, 131, 1);
 }
 
 textarea:focus {
-	outline: 0;
+  outline: 0;
 }
 
 /* markDownOutput.js */
 
 #outputHeader {
-	position: relative;
-	text-align: center;
-	text-decoration: underline !important;
+  position: relative;
+  text-align: center;
+  text-decoration: underline !important;
 }
 
 #preview {
-	position: relative;
-	text-decoration: none;
-	overflow: scroll;
+  position: relative;
+  text-decoration: none;
+  overflow: scroll;
 }
 
 /* about.js */
 
 #abtText {
-	text-align: center;
-	padding-bottom: 36%
+  text-align: center;
+  padding-bottom: 36%
 }
 
 #abtFooter {
-	position: relative;
-    text-align: center;
-    margin-top: -1em;
+  position: relative;
+  text-align: center;
+  margin-top: -1em;
 }
 
