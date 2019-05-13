@@ -11,7 +11,7 @@ class MarkDownOutput extends React.Component {
   }
   render() {
     return (
-      <div className="markDownElements" id="preview"><h3 id="outputHeader">Markdown Output</h3><div dangerouslySetInnerHTML={{__html: marked(this.props.text)}}></div></div>
+      <div className="markDownElements" id="preview"><h3 id="outputHeader">Markdown Output</h3><div id="outputSection" dangerouslySetInnerHTML={{__html: marked(this.props.text)}}></div></div>
     );
   }
 }

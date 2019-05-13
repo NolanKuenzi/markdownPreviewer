@@ -112,6 +112,10 @@ textarea:focus {
   overflow: auto;
 }
 
+#outputSection {
+  overflow: auto;
+}
+
 /* about.js */
 
 #abtText {
