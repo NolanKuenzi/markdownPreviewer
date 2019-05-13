@@ -92,6 +92,7 @@ a {
   font-size: 0.9em;
   background-color: blue;
   background-color: rgba(42, 109, 131, 1);
+  overflow: auto;
 }
 
 textarea:focus {
@@ -109,10 +110,6 @@ textarea:focus {
 #preview {
   position: relative;
   text-decoration: none;
-  overflow: auto;
-}
-
-#outputSection {
   overflow: auto;
 }
 
